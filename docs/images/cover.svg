@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">&gt;.&lt; — macOS 翻译工具</title>
+  <desc id="description">蓝绿玻璃质感的云朵图标，配以划词、截图、输入翻译和系统翻译、自定义模型等功能介绍。</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5fbfc"/>
+      <stop offset="0.51" stop-color="#e7f4f5"/>
+      <stop offset="1" stop-color="#d9eaf8"/>
+    </linearGradient>
+    <radialGradient id="mintGlow">
+      <stop offset="0" stop-color="#b8eacb" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#b8eacb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0" stop-color="#8cc5ed" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#8cc5ed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.82"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#eaf6fc" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="iconGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.93"/>
+      <stop offset="0.56" stop-color="#eff9fb" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#d5eafa" stop-opacity="0.91"/>
+    </linearGradient>
+    <linearGradient id="cloudColor" x1="0.08" y1="0.04" x2="0.9" y2="0.97">
+      <stop offset="0" stop-color="#e6f6d6"/>
+      <stop offset="0.25" stop-color="#b7ddca"/>
+      <stop offset="0.55" stop-color="#82c7d4"/>
+      <stop offset="0.8" stop-color="#64a7cb"/>
+      <stop offset="1" stop-color="#467eb3"/>
+    </linearGradient>
+    <radialGradient id="cloudLight">
+      <stop offset="0" stop-color="#fffde8" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#fffde8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloudDeep">
+      <stop offset="0" stop-color="#3475ae" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#3475ae" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7f8f2" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#e7f3fb" stop-opacity="0.86"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-30%" width="150%" height="170%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="cloudShadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <path id="cloudShape" d="M36 166 C34 132 56 103 91 91 C101 58 129 36 167 39 C197 36 221 48 242 72 C270 64 304 76 320 103 C340 128 342 151 333 176 C350 202 346 234 325 253 C321 285 295 307 263 309 C238 331 201 329 176 312 C148 321 114 312 100 289 C65 290 42 266 45 233 C16 218 14 184 36 166 Z"/>
+    <clipPath id="cloudClip"><use href="#cloudShape"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <ellipse cx="195" cy="95" rx="460" ry="360" fill="url(#mintGlow)"/>
+  <ellipse cx="1490" cy="805" rx="550" ry="405" fill="url(#blueGlow)"/>
+  <circle cx="1430" cy="90" r="245" fill="none" stroke="#ffffff" stroke-opacity="0.38" stroke-width="2"/>
+  <circle cx="1430" cy="90" r="332" fill="none" stroke="#ffffff" stroke-opacity="0.24" stroke-width="2"/>
+
+  <rect x="84" y="94" width="1432" height="724" rx="60" fill="#7aa6b5" opacity="0.15" filter="url(#shadow)"/>
+  <rect x="72" y="72" width="1456" height="756" rx="60" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.88" stroke-width="2"/>
+  <path d="M129 194 C433 101 991 121 1457 166" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="2"/>
+
+  <rect x="164" y="231" width="414" height="414" rx="101" fill="#4c91ad" opacity="0.18" filter="url(#shadow)"/>
+  <rect x="150" y="215" width="414" height="414" rx="101" fill="url(#iconGlass)" stroke="#ffffff" stroke-width="3"/>
+  <path d="M184 286 C229 233 305 227 414 233" fill="none" stroke="#ffffff" stroke-opacity="0.79" stroke-width="8" stroke-linecap="round"/>
+  <path d="M179 548 C221 594 307 605 375 605" fill="none" stroke="#ffffff" stroke-opacity="0.48" stroke-width="4" stroke-linecap="round"/>
+
+  <g transform="translate(185 240)">
+    <use href="#cloudShape" transform="translate(0 21)" fill="#2b6d97" opacity="0.3" filter="url(#cloudShadow)"/>
+    <use href="#cloudShape" fill="url(#cloudColor)" stroke="#b9dee0" stroke-opacity="0.68" stroke-width="2"/>
+    <g clip-path="url(#cloudClip)">
+      <ellipse cx="121" cy="79" rx="135" ry="105" fill="url(#cloudLight)"/>
+      <ellipse cx="282" cy="267" rx="165" ry="130" fill="url(#cloudDeep)"/>
+      <path d="M50 164 C82 111 123 93 164 98" fill="none" stroke="#ffffff" stroke-opacity="0.17" stroke-width="24" stroke-linecap="round"/>
+    </g>
+    <path d="M123 166 L161 186 L123 206 M234 166 L196 186 L234 206" fill="none" stroke="#263c48" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="178" cy="205" r="10" fill="#263c48"/>
+  </g>
+
+  <text x="670" y="281" fill="#50849b" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="31" font-weight="600" letter-spacing="4">macOS 翻译工具</text>
+  <text x="661" y="438" fill="#183c50" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', Arial, sans-serif" font-size="154" font-weight="760" letter-spacing="-7">&gt;.&lt;</text>
+  <path d="M670 482 H1373" stroke="#a8cdd4" stroke-width="2"/>
+
+  <rect x="670" y="527" width="681" height="84" rx="27" fill="url(#chip)" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="719" cy="569" r="17" fill="#b4ddd0"/>
+  <path d="M712 569 H726 M719 562 V576" stroke="#477f86" stroke-width="3" stroke-linecap="round"/>
+  <text x="759" y="580" fill="#245266" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="35" font-weight="550" letter-spacing="2">划词 · 截图 · 输入</text>
+
+  <rect x="670" y="628" width="681" height="84" rx="27" fill="url(#chip)" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="719" cy="670" r="17" fill="#add4ec"/>
+  <path d="M711 671 C716 661 722 661 727 671 M712 675 H726" fill="none" stroke="#4c83a5" stroke-width="3" stroke-linecap="round"/>
+  <text x="759" y="681" fill="#245266" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="35" font-weight="550" letter-spacing="2">系统翻译 · 自定义模型</text>
+</svg>

@@ -83,10 +83,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let menu = NSMenu()
         let applicationItem = NSMenuItem()
         let appMenu = NSMenu()
-        appMenu.addItem(withTitle: "关于 OvO", action: #selector(openAbout), keyEquivalent: "")
+        appMenu.addItem(withTitle: "关于 >.<", action: #selector(openAbout), keyEquivalent: "")
         appMenu.addItem(withTitle: "设置…", action: #selector(openSettings), keyEquivalent: ",")
         appMenu.addItem(.separator())
-        appMenu.addItem(withTitle: "退出 OvO", action: #selector(quit), keyEquivalent: "q")
+        appMenu.addItem(withTitle: "退出 >.<", action: #selector(quit), keyEquivalent: "q")
         applicationItem.submenu = appMenu
         menu.addItem(applicationItem)
         let editItem = NSMenuItem()
@@ -129,7 +129,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         if translationWindow == nil {
             let window = TranslationPanel(contentRect: NSRect(x: 0, y: 0, width: 404, height: 233),
                                           styleMask: [.borderless, .resizable, .nonactivatingPanel], backing: .buffered, defer: false)
-            window.title = "OvO 翻译"
+            window.title = ">.< 翻译"
             window.titleVisibility = .hidden
             window.titlebarAppearsTransparent = true
             window.isFloatingPanel = true
@@ -179,7 +179,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         if preferencesWindow == nil {
             let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 925, height: 700),
                                   styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView], backing: .buffered, defer: false)
-            window.title = "OvO 设置"
+            window.title = ">.< 设置"
             window.titleVisibility = .hidden
             window.titlebarAppearsTransparent = true
             window.isReleasedWhenClosed = false

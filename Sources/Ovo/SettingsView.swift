@@ -55,8 +55,8 @@ struct SettingsView: View {
             Image(nsImage: applicationIcon)
                 .resizable().interpolation(.high).scaledToFit()
                 .frame(width: 110, height: 110)
-                .accessibilityLabel("OvO 应用图标")
-            Text("OvO 1.0.0").font(.system(size: 24, weight: .semibold))
+                .accessibilityLabel(">.< 应用图标")
+            Text(">.< 1.0.0").font(.system(size: 24, weight: .semibold))
             Text("划词 · 截图 · 输入 · 历史记录").foregroundStyle(.secondary)
             Text("为中英文互译而做的轻量 macOS 工具。")
                 .font(.system(size: 13)).foregroundStyle(.tertiary)
@@ -189,7 +189,7 @@ struct GeneralSettingsView: View {
                     openPrivacy("Privacy_ScreenCapture")
                 }
             }
-            Text("若系统开关已开启，但这里仍未允许，请移除系统设置中的旧 OvO，再用「+」添加 /Applications/OvO.app，然后重新打开应用。")
+            Text("若系统开关已开启，但这里仍未允许，请移除系统设置中的旧 >.<，再用「+」添加 /Applications/>.<.app，然后重新打开应用。")
                 .font(.system(size: 12)).foregroundStyle(.secondary)
             HStack {
                 Button("重新检测权限", action: refreshPermissions)

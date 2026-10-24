@@ -5,12 +5,12 @@
 使用支持 Swift Testing 的 Swift 6 工具链、macOS 15 或更新 SDK。应用最低部署目标为 macOS 14；苹果系统翻译通过可用性检查仅在 macOS 15+ 启用。
 
 ```sh
-./scripts/build-app.sh        # Release，输出 dist/OvO.app
+./scripts/build-app.sh        # Release，输出 dist/>.<.app
 ./scripts/build-app.sh debug  # Debug
 ./scripts/test.sh             # Swift Testing
 ```
 
-测试脚本兼容 Xcode 与仅安装 Apple Command Line Tools 的环境。预编译发布包目前只提供 Apple Silicon 版本；未验证 Intel Mac 运行效果。
+测试脚本兼容 Xcode 与仅安装 Apple Command Line Tools 的环境。当前仓库以源码构建为主；未验证 Intel Mac 运行效果。
 
 ## 签名
 
@@ -42,7 +42,7 @@ API Key 保存在系统钥匙串中。启动和设置状态检查只查询密钥
 
 ## 验证范围
 
-1.0.0（构建 15）包含 75 项自动化测试，覆盖语言方向、请求格式、模拟 HTTP 响应、取消、历史存储与迁移、服务切换、截图输出解析及中英文 OCR。
+1.0.0（构建 17）包含 75 项自动化测试，覆盖语言方向、请求格式、模拟 HTTP 响应、取消、历史存储与迁移、服务切换、截图输出解析及中英文 OCR。
 
 已在开发机验证苹果系统中英双向翻译与首次语言包下载、自定义 API 的本机模拟服务连接、应用启动和设置界面。自动化测试不调用用户的真实 API Key。
 

@@ -18,9 +18,9 @@ enum PlatformError: LocalizedError, Equatable {
         case .cancelled:
             return "已取消截图。"
         case .accessibilityPermissionRequired:
-            return "请在系统设置 → 隐私与安全性 → 辅助功能中允许 OvO，然后重新尝试划词翻译。"
+            return "请在系统设置 → 隐私与安全性 → 辅助功能中允许 >.<，然后重新尝试划词翻译。"
         case .screenRecordingPermissionRequired:
-            return "请在系统设置 → 隐私与安全性 → 屏幕与系统音频录制中允许 OvO，然后重新打开 OvO。"
+            return "请在系统设置 → 隐私与安全性 → 屏幕与系统音频录制中允许 >.<，然后重新打开 >.<。"
         case .noSourceApplication:
             return "请先在其他应用中选中文字，再使用划词翻译快捷键。"
         case .noSelectedText:

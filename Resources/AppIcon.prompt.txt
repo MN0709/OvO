@@ -1,9 +1,12 @@
-2026-09-20 — Built-in imagegen edit (not CLI).
-Selected by user: 4：浅杏桃，偏暖。
-Approved output: exec-a3f3164b-f9b3-4882-8d66-1a325a16a267.png
-Parent preview: exec-7074bfcb-1889-481c-bd95-5f90cb07208c.png
-Previous production asset: Resources/PreviousIcons/AppIcon-OvO-build13.png
+2026-09-21 — Built-in imagegen precise-object edit (not CLI).
+Requested by user: keep the supplied blue-green glass icon and replace only its face with >.<.
+Generated output: exec-bab3d096-6811-41a8-9235-c6b5fb19bb06.png
+Edit target: user-supplied 101677ea4763c355ebf6e62c79864cb1.png
+Expression reference: user-supplied 截屏2026-09-21 18.06.28.png
 Installed output: Resources/AppIcon.png
 
+macOS Dock fill correction:
+The generated 1274 x 1274 production icon was center-cropped to 1064 x 1064 and resampled back to 1274 x 1274. This 1.20x overscan compensates for the macOS 26 Dock inset visible in the user's screenshot, so the glass tile fills the system icon frame. No generative redraw was used for this correction.
+
 Final edit prompt:
-Use case: precise-object-edit. Edit this exact icon. User requests the cloud color a little lighter. Change ONLY the cloud's colors: lift midtones and especially shadows by roughly 15–20%, reduce saturation slightly for a softer milky pastel finish. Color direction: creamy pale apricot highlights to soft peach midtones to muted rose-peach shadows. Replace the deepest dark terracotta/red patches with gentle dusty peach; no dark red. Keep the existing clearly visible multi-tone gradient and soft inflated volume; do not flatten into a solid fill, do not overexpose or use bright neon colors. Preserve EXACTLY all geometry: the cloud silhouette, the white pearl-glass rounded-square outer tile, placement and size, and most importantly the current playful white OvO face with tilted equal-sized oval O eyes and small curved v smile. Do not alter face strokes, position, scale, or expression at all. Preserve white face contrast against the cloud. Keep same canvas, margins and transparent outer background. One single icon, no labels or extra text. This is a gentle pastel color adjustment, not a redesign.
+Use case: precise-object-edit. Asset type: macOS application icon, production raster asset. Edit Image 1 only. Replace the current white OvO face on the blue-green cloud with the exact expression shown in Image 2: two inward-pointing angle eyes and a centered dot, visually reading >.<. The new expression must be dark charcoal gray like Image 2, centered on the cloud, clean, sharp, minimal, and large enough to read clearly at Dock icon size. Image 1 is the edit target and must provide the full icon; Image 2 is only the face reference. Change only the face. Remove the two white ring eyes and white curved smile completely. Preserve the blue-green cloud silhouette, gradients, soft inflated volume, pearl-glass rounded-square outer tile, highlight, border, shadows, composition, canvas, margins, and transparent outer corners. Keep one single icon with no label, watermark, or added object. Do not redesign or recolor the icon.

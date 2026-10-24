@@ -107,7 +107,7 @@ private final class SystemKeychainBackend: KeychainBackend {
         if status == errSecItemNotFound {
             var item = baseQuery
             item[kSecValueData as String] = data
-            item[kSecAttrLabel as String] = account == "deepseek-api-key" ? "OvO · DeepSeek API Key" : "OvO · 自定义 API Key"
+            item[kSecAttrLabel as String] = account == "deepseek-api-key" ? ">.< · DeepSeek API Key" : ">.< · 自定义 API Key"
             item[kSecAttrAccessible as String] = kSecAttrAccessibleWhenUnlockedThisDeviceOnly
             let addStatus = SecItemAdd(item as CFDictionary, nil)
             guard addStatus == errSecSuccess else { throw KeychainError.operationFailed(addStatus) }
@@ -138,7 +138,7 @@ enum KeychainError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .operationFailed(let status):
-            if status == errSecUserCanceled { return "钥匙串授权已取消，请重试并允许 OvO 访问。" }
+            if status == errSecUserCanceled { return "钥匙串授权已取消，请重试并允许 >.< 访问。" }
             if status == errSecInteractionNotAllowed { return "钥匙串当前已锁定，请解锁后重试。" }
             return "无法访问系统钥匙串（错误 \(status)），请检查钥匙串访问权限。"
         case .invalidData: return "钥匙串中的 API Key 无法读取，请重新保存。"

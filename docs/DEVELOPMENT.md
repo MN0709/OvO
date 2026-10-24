@@ -10,7 +10,7 @@
 ./scripts/test.sh             # Swift Testing
 ```
 
-测试脚本兼容 Xcode 与仅安装 Apple Command Line Tools 的环境。当前仓库以源码构建为主；未验证 Intel Mac 运行效果。
+测试脚本兼容 Xcode 与仅安装 Apple Command Line Tools 的环境。公开安装包仅验证 Apple Silicon；未验证 Intel Mac 运行效果。
 
 ## 签名
 

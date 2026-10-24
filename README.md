@@ -24,6 +24,12 @@
 
 关闭窗口后，快捷键仍可使用；点击 Dock 图标可重新打开窗口。按 **Command + Q** 退出。
 
+## 下载安装
+
+从 [Releases](https://github.com/MN0709/OvO/releases/latest) 下载 `OvO-1.0.0-macOS-arm64.zip`，解压后将 `>.<.app` 拖入「应用程序」并打开。安装包适用于 Apple Silicon（M 系列）Mac，要求 macOS 14 或更高版本；苹果系统翻译需要 macOS 15 或更高版本。Intel Mac 尚未验证。
+
+安装包使用本机开发证书签名，**未经 Apple 公证**。如果首次打开被 macOS 拦截，请先尝试打开一次，再按 [Apple 的说明](https://support.apple.com/zh-cn/102445) 在「系统设置 → 隐私与安全性」中选择「仍要打开」。无需关闭系统安全保护。
+
 ## 从源码运行
 
 需要 macOS 14 或更高版本，以及带有 macOS 15 或更新 SDK 的 Swift 6 工具链。苹果系统翻译需要 macOS 15 或更高版本；macOS 14 可配置 DeepSeek 或自定义 API。
@@ -35,7 +41,7 @@ cd OvO
 open 'dist/>.<.app'
 ```
 
-构建脚本会在本机生成开发签名。首次打开时，若 macOS 提示阻止，请在「系统设置 → 隐私与安全性」中确认打开；无需关闭系统安全保护。当前未提供经过 Apple 公证的安装包。构建细节见 [开发说明](docs/DEVELOPMENT.md)。
+构建脚本会在本机生成开发签名。构建细节见 [开发说明](docs/DEVELOPMENT.md)。
 
 ## 服务与数据
 
